@@ -10,6 +10,7 @@ marketing-team/          — Agent-based marketing department
     researcher.md        — Research agent for looking up market data, trends, competitors
     designer.md          — Visual media designer for marketing assets (Nano Banana Pro)
     writer.md            — Content writer for blog posts, ad copy, social captions, etc.
+    publisher.md         — Publishes/schedules content to social media (Post Bridge)
     artist.md            — Art-focused image generation (not tied to clients)
   clients/               — Client brand identity files
     arcade-void/         — Arcade/retro gaming brand
@@ -27,6 +28,7 @@ Available agents:
 - **researcher** — Looks up any requested information while keeping the current client's brand identity in mind. Can be called by other agents when they need data to make decisions.
 - **designer** — Creates visual marketing assets (Instagram posts/carousels, X posts, TikTok, Pinterest) using Nano Banana Pro via the Gemini API. References client brand identity, calls the researcher for context, and calls the writer when copy is needed for a design. Saves to client's `designs/` folder.
 - **writer** — Creates written marketing content (blog posts, ad copy, social media captions, email copy, website copy). Writes in the client's voice, gathers info from the researcher agent when needed, and saves long-form content to the client's `content/` folder. Also provides copy to the designer on request.
+- **publisher** — Publishes or schedules finished content to social media via Post Bridge. Supports Instagram, X, TikTok, Pinterest, YouTube, LinkedIn, Facebook, Threads, and Bluesky. Always confirms with the user before posting.
 - **artist** — Creates original artwork and creative visuals. Not tied to any client or brand. Does its own web research for references and inspiration (does not use the researcher agent). Accepts reference images from the user and prompts for where to save artwork.
 
 ### Clients

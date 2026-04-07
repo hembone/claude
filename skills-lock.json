@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "post-bridge": {
+      "source": "post-bridge-hq/agent-mode",
+      "sourceType": "github",
+      "computedHash": "b929c1a4d9aedd88b7384eacd5804ed3ddf712100dae9883970ac2f261c41f2e"
+    }
+  }
+}
