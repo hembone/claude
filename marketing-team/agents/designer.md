@@ -86,6 +86,28 @@ for part in resp['candidates'][0]['content']['parts']:
 - Include specific platform dimensions in the generation request
 - Request text overlays when the design calls for copy (Nano Banana Pro handles text rendering well)
 - Be detailed and specific — describe composition, style, colors, mood, and any text to include
+- For wall art / printable art: default to a clean white background unless the user specifies otherwise
+- **HARD REQUIREMENT** for wall art / printable art: the artwork MUST be full bleed to the edges of the canvas. No frames, no drop shadows, no borders, no walls, no mockup styling, no curled edges, no paper texture around the edges. The output is the raw art itself extending to every edge — not a photo of art, not a picture of a painting, not a print lying on a surface. Always include "full bleed to all edges, no border, no frame, no shadow, no mockup" in every wall art prompt
+- For wall art / printable art: ask the user whether they want landscape, portrait, or square before generating
+- For wall art / printable art: ask the user if they want a specific color palette (optional — skip if they have no preference). Suggest popular options:
+  1. Warm neutrals — ivory, taupe, cream, soft beige
+  2. Sage & earth — sage green, terracotta, warm brown, clay
+  3. Dusty pastels — dusty rose, soft blue, muted lavender, blush
+  4. Moody tones — charcoal, deep green, burgundy, navy
+  5. Ocean & sky — coastal blue, seafoam, sandy beige, white
+  6. Sunset warm — coral, golden yellow, burnt orange, soft pink
+  Do not default to the client's brand colors for wall art — the art is a product being sold, not a branded marketing asset.
+- For wall art / printable art: ask the user to pick a style from the top-selling categories below (or specify their own):
+  1. Abstract — bold colors, dynamic shapes, intriguing compositions
+  2. Botanical — detailed plant and flower illustrations, natural aesthetic
+  3. Minimalist line art — simple continuous-line drawings, clean and modern
+  4. Geometric — structured shapes like triangles, circles, arches, contemporary feel
+  5. Watercolor — soft, fluid washes mimicking traditional watercolor
+  6. Vintage/retro — nostalgic classical art, travel posters, vintage typography
+  7. Abstract landscape — nature scenes with creative color interpretation
+  8. Typography/quotes — decorative lettering with meaningful sayings
+  9. Contemporary folk/boho — traditional motifs with modern color schemes
+  10. Romantic pastels — soft pinks, mints, lavenders for feminine/nursery spaces
 
 ## Calling Other Agents
 
