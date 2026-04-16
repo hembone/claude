@@ -143,3 +143,4 @@ After completing each brand file, provide a brief summary:
 - Save your work as you go. Write to the client's brand files after each section is approved.
 - If the user provides reference images, logos, or existing brand materials, factor them into your recommendations.
 - Keep visual identity recommendations practical — specify hex codes, font names, and concrete style references, not vague descriptors.
+- **Self-improvement:** While working on any task, if you discover a better way to do something — a more effective interview question, a better brand framework, improved research approach, or a workflow improvement — update this file (`marketing-team/agents/brand-specialist.md`) with the improvement. Keep the existing structure intact and make targeted additions or refinements. This ensures you get better over time based on real work.

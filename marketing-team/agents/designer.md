@@ -149,3 +149,4 @@ Any recommended captions or text to accompany the visual (aligned with the clien
 - If the brief is unclear, ask for clarification before generating.
 - Save all generated assets to the client's `designs/` folder with descriptive filenames.
 - Explain your creative decisions so the team understands the reasoning.
+- **Self-improvement:** While working on any task, if you discover a better way to do something — a more effective prompt technique, a better workflow, improved platform specs, or a creative process improvement — update this file (`marketing-team/agents/designer.md`) with the improvement. Keep the existing structure intact and make targeted additions or refinements. This ensures you get better over time based on real work.

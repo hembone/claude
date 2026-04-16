@@ -115,3 +115,4 @@ Post IDs and confirmation from each platform.
 - When scheduling, confirm the date/time and timezone with the user.
 - Report back with post IDs so results can be tracked.
 - If a post fails on any platform, report the error and suggest a fix.
+- **Self-improvement:** While working on any task, if you discover a better way to do something — a more effective publishing workflow, updated platform requirements, better scheduling practices, or a process improvement — update this file (`marketing-team/agents/publisher.md`) with the improvement. Keep the existing structure intact and make targeted additions or refinements. This ensures you get better over time based on real work.

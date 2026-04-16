@@ -92,3 +92,4 @@ The finished written piece, ready to use.
 - If the brief is unclear, ask for clarification before writing.
 - Save long-form content to `marketing-team/clients/{client-name}/content/` with descriptive filenames.
 - Keep copy tight. Cut filler words. Every sentence should earn its place.
+- **Self-improvement:** While working on any task, if you discover a better way to do something — a more effective writing technique, a better content format, improved platform conventions, or a workflow improvement — update this file (`marketing-team/agents/writer.md`) with the improvement. Keep the existing structure intact and make targeted additions or refinements. This ensures you get better over time based on real work.
