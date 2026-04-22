@@ -2,66 +2,75 @@
 
 ## Offerings
 
-### Crop Tool
-Batch crop and resize listing photos to Etsy's required dimensions. Upload multiple images, select the target aspect ratio, adjust crop positioning, and export the entire set as a ZIP file for quick upload to Etsy.
+### Listings Manager — The Hub
+`/ 01 — MANAGE · THE HUB`
+
+Connect your Etsy shop and manage all your listings from one view. Filter, multi-select, batch-edit titles, tags, prices, and photos across dozens of listings at once. Preview changes before publishing. Undo for 30 days.
+
+**Key capabilities:**
+- Direct Etsy shop integration via API
+- Filter and search across all listings (by status, tag, category, SKU)
+- Multi-select and batch-edit listing details in one operation
+- Preview queued changes before publishing
+- 30-day undo on any change — in case you sneeze on Tuesday
+
+### Image Cropper
+`/ 02 — CROP`
+
+Pre-set to listing ratios. Drop a folder, crop the lot, export a clean ZIP. No one-by-one resizing, no manual dimension lookup.
 
 **Key capabilities:**
 - Batch processing — handle dozens of photos at once
-- Etsy-native aspect ratios built in
+- Etsy-native aspect ratios built in (4:3, 1:1, 3:4, 16:9)
 - Manual crop adjustment per image
-- ZIP export for bulk download
+- ZIP export for bulk download and Etsy upload
 
 ### Mockup Builder
-Place artwork and product designs onto realistic mockup templates with automatic perspective correction. Create professional listing images without Photoshop or design skills.
+`/ 03 — MOCK`
+
+Perspective-correct regions. Drop your art, get a mockup that actually looks real. No Photoshop skills required.
 
 **Key capabilities:**
 - Drag-and-drop artwork placement
 - Automatic perspective correction for realistic results
-- Library of product mockup templates
+- Library of product mockup templates (t-shirts, art prints, totes, mugs, and more)
 - Export-ready listing images
 
 ### Image Gallery
-Persistent cloud image storage that works across all ezListr tools. Upload images once and access them from the Crop Tool, Mockup Builder, or Listings Manager without re-uploading.
+`/ 04 — STORE`
+
+One upload, every tool sees it. Crops stay organized across sessions. Upload once and access your images from the Cropper, Mockup Builder, or Listings Manager without re-uploading.
 
 **Key capabilities:**
-- Cross-tool image access
+- Cross-tool image access — one library for all four tools
 - Persistent storage between sessions
 - Upload and organize artwork, photos, and assets
 - Shared library across the entire toolkit
 
-### Listings Manager
-Connect your Etsy shop and manage all your listings from one dashboard. View, filter, organize, and batch-edit listings without navigating Etsy's cumbersome built-in interface.
-
-**Key capabilities:**
-- Direct Etsy shop integration via API
-- Filter and search across all listings
-- Batch-edit listing details
-- Centralized listing organization and overview
-
 ## Pricing
-
-> **Note:** Specific pricing tiers have not been publicly confirmed. The structure below reflects the observed freemium model ("Get Started Free") with reasonable SaaS assumptions. Update when official pricing is available.
 
 | Tier | Price | Description |
 |------|-------|-------------|
-| **Free** | $0 | Core access to all four tools with usage limits. Get started with real work, no credit card required. |
-| **Pro** (estimated) | TBD (~$9–$19/month) | Unlimited exports, full mockup template library, unlimited image storage, advanced listing management features. |
+| **Free** | $0/forever | Core access to all four tools for small shops. No card, no onboarding call. Get started with real work. |
+| **Pro** | TBD | Unlimited exports, full mockup template library, unlimited image storage, advanced listing management features. Upgrade when your shop outgrows the free tier. |
 
-Pricing strategy: Low-barrier entry. The free tier lets sellers evaluate ezListr on their actual workflow before committing. The upgrade path is driven by volume — as a seller's shop grows, the free tier's limits naturally create the case for Pro.
+Pricing strategy: Free forever for small shops. The upgrade is for volume — as a seller's shop grows, the free tier's limits create a natural, low-pressure case for Pro. No trial clocks, no card required upfront.
 
 ## Key Features
 
-- **Batch processing** — Handle dozens or hundreds of images at once instead of one by one
+- **Batch processing** — Handle dozens or hundreds of images and listings at once instead of one by one
 - **Etsy-native specs** — Output dimensions and formats match Etsy's exact requirements
 - **Cross-tool image storage** — Upload once, use across Crop, Mockup, and Listings tools
 - **Etsy API integration** — Live connection to shop data for real-time listing management
 - **ZIP export** — Download all processed images in one click for fast Etsy upload
 - **Perspective-corrected mockups** — Artwork placed realistically on templates, not flat-pasted
 - **Filter and bulk-edit listings** — Organize by status, tags, category, or custom filters
+- **30-day undo** — Revert any change to listings, anytime within 30 days
 
 ## Unique Selling Points
 
 - **Etsy-specific by design** — Not a generic photo editor, not a general project management tool. Every feature is built around what Etsy sellers actually need, from crop dimensions to listing fields.
-- **All-in-one consolidation** — Replaces 3–4 separate tools (photo editor + mockup app + image host + listing manager) with one purpose-built toolkit. Fewer tabs, fewer logins, less friction.
+- **Four tools, one login** — Replaces 3–4 separate tools (photo editor + mockup app + image host + listing manager) with one focused toolkit. Fewer tabs, fewer logins, less friction.
 - **Batch-first architecture** — Designed for sellers with many listings, not one-at-a-time workflows. The tool scales with the shop.
-- **Free entry point** — No commitment required to evaluate the tool on real work. Start free, upgrade when volume demands it.
+- **Calm, no-onboarding entry** — No card, no call, no empty dashboard asking you to get started. Free tier works immediately on real listings.
+- **A toolkit, not a platform** — Open it, use it, done. No system to configure, no workflow to maintain.

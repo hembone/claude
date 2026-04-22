@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 280 84"
+     width="280"
+     height="84"
+     role="img"
+     aria-label="ezListr wordmark">
+
+  <!--
+    ezListr wordmark
+    —————————————————————————————————————————
+    "ez"    Instrument Serif · italic · 72px · #2d2a26 (ink)
+    "Listr" Geist · 700 · 56px (0.78×) · #d4704a (terracotta accent)
+    —————————————————————————————————————————
+    Fonts: https://fonts.google.com
+      Instrument Serif — ital
+      Geist — wght 700
+  -->
+
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&amp;family=Geist:wght@700&amp;display=swap');
+    </style>
+  </defs>
+
+  <text x="8" y="66">
+
+    <!-- "ez" — warm italic serif, full ink weight -->
+    <tspan
+      font-family="'Instrument Serif', Georgia, 'Times New Roman', serif"
+      font-style="italic"
+      font-weight="400"
+      font-size="72"
+      fill="#2d2a26"
+    >ez</tspan>
+
+    <!-- "Listr" — geometric bold sans, terracotta, 0.78× the "ez" size -->
+    <tspan
+      font-family="'Geist', 'Helvetica Neue', Helvetica, Arial, sans-serif"
+      font-weight="700"
+      font-size="56"
+      fill="#d4704a"
+      letter-spacing="-1.7"
+      dx="3"
+    >Listr</tspan>
+
+  </text>
+
+</svg>

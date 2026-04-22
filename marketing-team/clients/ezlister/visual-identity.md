@@ -2,95 +2,131 @@
 
 ## Color Palette
 
-A clean, modern, utility-focused palette. Cool-neutral backgrounds with a bold accent for interactive elements. Feels professional and tool-like — not playful, not artsy. Designed to stay out of the way and let the seller's own content take center stage.
-
-> **Note:** Hex codes below are approximations based on the live site's observed aesthetic. Confirm exact values against ezlistr.com brand assets before use in final designs.
+A warm, paper-like palette inspired by parchment, aged linen, and dried ink. The background feels like a calm workspace — not a blank screen. Terracotta is the sole accent: energetic enough to draw the eye, grounded enough to stay out of the way. The overall mood is artisanal-calm, not sterile SaaS.
 
 ### Primary Colors
 
-| Name | Hex | Usage |
-|------|-----|-------|
-| **White** | `#FFFFFF` | Primary background. App UI, marketing pages, cards. |
-| **Dark Navy** | `#1A1A2E` | Primary text, navigation bar, hero sections, dark backgrounds. |
-| **Accent Blue** | `#4A7BF7` | Primary CTA buttons, active states, links, interactive highlights. |
+| Token | Hex | Usage |
+|-------|-----|-------|
+| `--paper` | `#faf7f2` | Primary page background |
+| `--paper-2` | `#f2ece1` | Cards, toolbars, secondary surfaces |
+| `--paper-3` | `#e8dfd1` | Deeper surface, hover states, dividers |
+| `--white` | `#fffdf8` | Panel white, card interiors |
+| `--ink` | `#2d2a26` | Primary text, headings, logo "ez" |
+| `--ink-2` | `#4a453e` | Secondary text, labels |
+| `--ink-3` | `#7a7268` | Tertiary/muted text, icons, placeholders |
+| `--rule` | `#d9cfbf` | Borders, dividers, table rules |
 
-### Secondary Colors
+### Accent Colors
 
-| Name | Hex | Usage |
-|------|-----|-------|
-| **Light Gray** | `#F4F4F8` | Card backgrounds, input fields, secondary surfaces. |
-| **Medium Gray** | `#9B9BA8` | Secondary text, placeholder text, icons, borders. |
-| **Success Green** | `#34C759` | Confirmations, success states, positive indicators. |
-| **Error Red** | `#E5484D` | Error states, destructive action warnings. |
-| **Warm Amber** | `#F5A623` | Warnings, upgrade prompts, attention-drawing accents. |
+| Token | Hex | Usage |
+|-------|-----|-------|
+| `--accent` | `#d4704a` | Terracotta — primary CTAs, active states, logo "Listr", highlights |
+| `--accent-deep` | `#b25939` | Hover and pressed states for accent elements |
+| `--accent-soft` | `#f3d4c2` | Tinted accent backgrounds (selected rows, badges) |
+
+### Supporting Colors
+
+| Token | Hex | Usage |
+|-------|-----|-------|
+| `--sage` | `#7a8a6b` | Secondary supporting color, "live" status backgrounds |
+| `--ochre` | `#c9a961` | Supporting color, callout stickers, highlight accents |
 
 ### Color Usage Rules
-- Backgrounds are clean white or very light gray — never dark for primary content areas
-- Dark navy for text and navigation elements — provides strong contrast without harsh pure black
-- Single accent color (blue) for all interactive elements — buttons, links, active tabs, focus states
-- Avoid multiple competing accent colors — the UI should feel unified, not colorful
-- Success/error/warning colors are functional only — never used decoratively
-- Overall feel: 75% white/light, 15% dark navy, 10% accent blue
+
+- Backgrounds are always warm paper tones — never cold gray or pure white
+- Text uses warm ink tones for a softer, less harsh contrast than pure black
+- A single accent (terracotta) handles all interactive elements — buttons, links, active states, focus rings
+- Sage and ochre are supporting colors only — never used for primary interactive elements
+- Overall tone: ~70% paper/warm white, ~15% ink tones, ~10% accent, ~5% sage/ochre
 
 ## Typography
 
-### Primary Typeface — UI and Headings
-**Inter** (Google Fonts, free)
-- Weight: SemiBold (600) for headings, Bold (700) for brand name and primary CTAs
-- Usage: Headlines, section headers, button labels, navigation
-- Why: Clean geometric sans-serif with excellent readability at all sizes. Industry-standard for SaaS tools. Feels modern and professional without being cold.
+Three typefaces, each with a distinct role. Together they create a layered system: warmth from the serif, utility from the sans, precision from the mono.
 
-### Secondary Typeface — Body
-**Inter** (same family)
-- Weight: Regular (400) for body, Medium (500) for emphasis
-- Usage: Body copy, product descriptions, tooltips, form labels, help text
-- Why: Using one type family keeps the interface clean and consistent. Inter's weight range provides all the hierarchy needed.
+### Display — Instrument Serif
+**Source:** Google Fonts (`Instrument Serif`, italic weight)
+- Used for: Hero headings, section headers, step numbers, the "ez" in the logo wordmark
+- Weight: 400 (regular), italic variant for personality
+- Why: Humanist and warm. The italic style adds an artisanal, handcrafted quality without being precious. Pairs with Geist to balance approachability and utility.
+
+**Usage examples:** `h1.display`, section `h2`, `.serif-i` italic decorative text, large step numerals
+
+### UI Sans-serif — Geist
+**Source:** Google Fonts (`Geist`, weights 400/500/600/700)
+- Used for: Body copy, navigation, buttons, labels, the "Listr" in the logo wordmark
+- Weights: 400 (body), 500 (emphasis), 600/700 (headings, brand name, CTAs)
+- Why: Clean geometric sans-serif with excellent legibility at small sizes. Modern but not cold. Default for all UI text.
+
+**Usage examples:** Body copy, nav links, button labels, form inputs, table cells
+
+### Monospace — JetBrains Mono
+**Source:** Google Fonts (`JetBrains Mono`, weights 400/500)
+- Used for: Technical labels, dimension badges, SKU references, status chips, kicker labels, metadata
+- Style: Uppercase, `letter-spacing: 0.04–0.12em` depending on context, 10–12px
+- Why: Provides a precise, tool-like quality for data and labels. Anchors the "serious tool" feeling without making the UI feel cold.
+
+**Usage examples:** Ratio labels (`4:3`, `1:1`), SKU codes, section kicker labels (`/ 01 — CROP`), dimension badges
 
 ### Type Rules
-- Headings: Inter SemiBold, sentence case (not all caps)
-- Body: Inter Regular, 14–16px base
-- Generous line spacing (1.5–1.6) for readability
-- Left-aligned text — never centered for body copy
-- Monospace (JetBrains Mono or similar) for any technical references or code snippets
-- Never use decorative, serif, or handwritten fonts — they conflict with the tool aesthetic
 
-## Logo Usage
+- Display headings: Instrument Serif, sentence case, `-0.01–0.02em` letter spacing
+- Body: Geist Regular, 17px base, `line-height: 1.55`
+- Technical metadata: JetBrains Mono, uppercase, generous letter spacing
+- No all-caps for body copy or section headings — uppercase is reserved for mono labels only
+- Text is left-aligned except for centered CTA sections
 
-### Existing Logo
-The ezListr wordmark — "ezListr" with the distinctive lowercase "ez" + capitalized "Listr" naming convention. Clean sans-serif treatment.
+## Logo
+
+### Wordmark Treatment
+
+The logo is a typographic wordmark combining two typefaces:
+
+- **"ez"** — Instrument Serif, italic, `--ink` (#2d2a26)
+- **"Listr"** — Geist Bold (700), `--accent` (#d4704a), `font-size: 0.78em`, `margin-left: 2px`
+
+The contrast between the serif italic and the geometric bold creates the brand character in miniature: artisanal warmth + practical utility.
 
 ### Usage Guidelines
-- **Primary:** Wordmark on white or light backgrounds
-- **Reversed:** White wordmark on dark navy backgrounds
-- **Minimum clear space:** Equal to the height of the lowercase "e" on all sides
+
+- **Primary:** Wordmark on `--paper` or `--white` backgrounds
+- **Reversed:** Wordmark on `--ink` dark backgrounds — "ez" in `--paper`, "Listr" in `--accent`
+- **Minimum clear space:** Equal to the cap-height of the "L" on all sides
 - **Minimum size:** 80px wide for digital use
-- **Never:** Place on busy backgrounds, stretch, rotate, add drop shadows, or change the typeface
-- **Favicon/icon:** Use the "ez" lettermark or a simplified icon derived from the wordmark
+- **Never:** Stretch, rotate, change typefaces, or apply drop shadows. Do not recolor "Listr" to anything other than `--accent`.
+- **Favicon / icon:** The "ez" lettermark in Instrument Serif italic, or an abstract mark derived from the wordmark
 
-## Imagery Style
+## Design Aesthetic
 
-### Product Screenshots
-- **Clean, annotated UI screenshots** showing the tools in action — cropping, mockup building, listing management
-- **Highlight key actions** with subtle annotations (arrows, circles, step numbers) — keep annotations in the brand accent blue
-- **Show real Etsy seller workflows** — not empty-state UIs. Screenshots should have actual listings, photos, and mockups loaded
-- **Browser chrome optional** — crop tightly to the relevant UI area for social and marketing use
+### Surface and Texture
 
-### Demo and Tutorial Imagery
-- **Before/after comparisons** — messy unformatted photos vs. polished, cropped listing images
-- **Step-by-step sequences** — 3–4 frame progressions showing a workflow from start to finish
-- **Screen recordings** for complex features — keep under 60 seconds, add captions
-- **Thumbnail style:** Clean, text-heavy, showing the UI. Accent blue for emphasis text.
+- **Grain overlay:** A subtle paper-grain texture at 35% opacity, `mix-blend-mode: multiply`, applied as a fixed overlay across the entire page. This gives the UI a tactile, printed quality.
+- **Backgrounds:** Always warm paper tones. Primary content areas use `--paper` (#faf7f2). Cards and panels use `--white` (#fffdf8) or `--paper-2` (#f2ece1).
+- **Canvas/grid backgrounds:** Interactive tool areas (crop canvas, mockup stage) use a fine dot or line grid in `--paper-2` on `--white` to evoke a designer's sketchpad.
 
-### Social Media Visual Style
-- Clean, consistent templates with white backgrounds and accent blue highlights
-- UI screenshots are the hero — not stock photography
-- Text overlays: minimal, Inter typeface, high contrast
-- Consistent border/padding treatment across posts
-- Recognizable at a glance — someone should spot an ezListr post by the clean UI + blue accent pattern
+### Shape and Structure
 
-### What to Avoid Visually
-- Stock photography of generic "business people" or "entrepreneurs at laptops"
-- Overly designed or illustrative graphics that feel like a consumer app, not a tool
-- Busy backgrounds, gradients, or heavy drop shadows
-- Dark/moody editing — the brand is clean and light
-- Mockups of the tool in unrealistic contexts (phones, tablets) unless those platforms are actually supported
+- **Border radius:** 14–18px for cards and panels; 6–10px for inner elements; `999px` (pill) for buttons and tags
+- **Borders:** `1px solid var(--rule)` — warm, not harsh. Used consistently on cards, inputs, and dividers.
+- **Shadows:** Warm-toned, low-opacity. `rgba(45,42,38, .12–.25)` — never cool gray box shadows.
+- **Buttons:** Pill-shaped (`border-radius: 999px`). Primary = terracotta fill. Ghost = transparent with `--rule` border.
+- **Status chips:** Pill or small rounded rectangle. Monospace type, uppercase.
+
+### Imagery Style
+
+#### Product Screenshots
+- Show real Etsy seller content loaded in the tools — listings, photos, tags, prices. Never empty-state UIs.
+- Warm paper backgrounds behind UI screenshots. Avoid floating on pure white.
+- Annotations (callouts, step numbers) in `--accent` terracotta or `--ink`.
+
+#### Demo and Social Imagery
+- Before/after comparisons: messy unformatted photos vs. polished listing images
+- Step-by-step sequences (3–4 frames) showing a workflow from raw photo to published listing
+- Tool UI is the hero of every image — not lifestyle photography or generic stock
+
+#### What to Avoid Visually
+- Cold blue, gray, or navy palettes — they fight the brand's warm character
+- Inter or generic system sans-serifs in marketing graphics (use Geist/Instrument Serif)
+- Stock photography of entrepreneurs at laptops
+- Heavy drop shadows, glossy effects, or gradients on solid UI elements
+- Dark-mode / neon aesthetics — ezListr is explicitly a daylight, calm-workspace tool
